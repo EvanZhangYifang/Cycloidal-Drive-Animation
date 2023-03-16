@@ -111,7 +111,7 @@ sli_Rd = Slider(ax_Rd, 'Rd', 1, 40, valinit=20, valstep=delta)
 sli_rd = Slider(ax_rd, 'rd', 1, 10, valinit=5, valstep=delta)
 sli_e = Slider(ax_e, 'e', 0.1, 10, valinit=2, valstep=delta/10)
 sli_N = Slider(ax_N, 'N', 3, 40, valinit=10, valstep=delta)
-sli_d = Slider(ax_d, 'd', 2, 20, valinit=10,valstep=delta)
+sli_d = Slider(ax_d, 'd', 2, 20, valinit=5,valstep=delta/10)
 sli_D = Slider(ax_D, 'D', 5, 200, valinit=80,valstep=delta)
 
 def update(val):
@@ -179,6 +179,6 @@ def animate(frame):
 
     fig.canvas.draw_idle()
 
-ani = animation.FuncAnimation(fig, animate,frames=sli_fm.val*(sli_N.val-1), interval=interval)
+ani = animation.FuncAnimation(fig, animate,frames=int(sli_fm.val*(sli_N.val-1)), interval=interval)
 dpi=100
 plt.show()

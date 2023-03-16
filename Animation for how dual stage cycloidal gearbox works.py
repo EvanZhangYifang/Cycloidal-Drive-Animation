@@ -145,7 +145,7 @@ sli_Rm = Slider(ax_Rm, 'Rm', 1, 10, valinit=5, valstep=delta)
 sli_e = Slider(ax_e, 'e', 0.1, 10, valinit=1.5, valstep=delta/10)
 sli_N1 = Slider(ax_N1, 'N2', 3, 40, valinit=16, valstep=delta)
 sli_N = Slider(ax_N, 'N1', 3, 40, valinit=15, valstep=delta)
-sli_d = Slider(ax_d, 'd', 2, 20, valinit=5,valstep=delta)
+sli_d = Slider(ax_d, 'd', 2, 20, valinit=5,valstep=delta/10)
 sli_D1 = Slider(ax_D1, 'D2', 5, 100, valinit=80,valstep=delta)
 sli_D = Slider(ax_D, 'D1', 5, 100, valinit=60,valstep=delta)
 
@@ -266,6 +266,6 @@ def animate(frame):
 
 
 
-ani = animation.FuncAnimation(fig, animate,frames=sli_fm.val*(sli_N.val-1), interval=50)
+ani = animation.FuncAnimation(fig, animate,frames=int(sli_fm.val*(sli_N.val-1)), interval=50)
 dpi=100
 plt.show()

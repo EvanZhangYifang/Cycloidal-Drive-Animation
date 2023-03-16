@@ -81,7 +81,7 @@ sli_fm = Slider(ax_fm, 'fm', 10, 100, valinit=50, valstep=delta)
 sli_Rm = Slider(ax_Rm, 'Rm', 1, 10, valinit=5, valstep=delta)
 sli_e = Slider(ax_e, 'e', 0.1, 10, valinit=2.5, valstep=delta/10)
 sli_N = Slider(ax_N, 'N', 3, 40, valinit=16, valstep=delta)
-sli_d = Slider(ax_d, 'd', 2, 20, valinit=10,valstep=delta)
+sli_d = Slider(ax_d, 'd', 2, 20, valinit=5,valstep=delta/10)
 sli_D = Slider(ax_D, 'D', 5, 100, valinit=80,valstep=delta)
 
 def update(val):
@@ -137,6 +137,6 @@ def animate(frame):
 
 
 
-ani = animation.FuncAnimation(fig, animate,frames=sli_fm.val*(sli_N.val-1), interval=interval)
+ani = animation.FuncAnimation(fig, animate,frames=int(sli_fm.val*(sli_N.val-1)), interval=interval)
 dpi=100
 plt.show()

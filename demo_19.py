@@ -161,6 +161,6 @@ def animate(frame):
 
 
 
-ani = animation.FuncAnimation(fig, animate,frames=sli_fm.val*(sli_N.val-1), interval=interval)
+ani = animation.FuncAnimation(fig, animate,frames=int(sli_fm.val*(sli_N.val-1)), interval=interval)
 dpi=100
 plt.show()
