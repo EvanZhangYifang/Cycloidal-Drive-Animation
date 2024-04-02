@@ -144,7 +144,7 @@ ax_D = plt.axes([0.25, 0.03, 0.5, 0.02], facecolor=axcolor)
 sli_fm = Slider(ax_fm, 'fm', 10, 100, valinit=50, valstep=delta)
 sli_Rd = Slider(ax_Rd, 'Rd', 1, 40, valinit=10, valstep=delta)
 sli_e = Slider(ax_e, 'e', 0.1, 10, valinit=1.4, valstep=delta/10)
-sli_N = Slider(ax_N, 'N', 3, 40, valinit=10, valstep=delta)
+sli_N = Slider(ax_N, 'N', 3, 80, valinit=10, valstep=delta)
 sli_d = Slider(ax_d, 'd', 2, 20, valinit=5,valstep=delta/10)
 sli_D = Slider(ax_D, 'D', 5, 100, valinit=80,valstep=delta)
 

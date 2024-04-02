@@ -211,7 +211,7 @@ sli_n = Slider(ax_n, 'n', 2, 10, valinit=6, valstep=delta)
 sli_Rd = Slider(ax_Rd, 'Rd', 1, 40, valinit=20, valstep=delta)
 sli_rd = Slider(ax_rd, 'rd', 1, 10, valinit=5, valstep=delta)
 sli_e = Slider(ax_e, 'e', 0.1, 10, valinit=2, valstep=delta/10)
-sli_N = Slider(ax_N, 'N', 3, 40, valinit=10, valstep=delta)
+sli_N = Slider(ax_N, 'N', 3, 80, valinit=10, valstep=delta)
 sli_d = Slider(ax_d, 'd', 2, 20, valinit=5,valstep=delta/10)
 sli_D = Slider(ax_D, 'D', 5, 100, valinit=80,valstep=delta)
 
